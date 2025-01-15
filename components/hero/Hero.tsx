@@ -6,7 +6,7 @@ import Heading from "./Heading";
 const Hero = () => {
   return (
     <div className='my-container'>
-      <section className='flex items-center justify-center pt-[100px] flex-col text-center'>
+      <section className='flex items-center justify-center sm:pt-[100px] pt-[60px] flex-col text-center'>
         <Heading />
         <div className='h-[3rem]'>
           <Button className='min-h-[64px] max-h-[64px]'>

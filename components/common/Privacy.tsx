@@ -1,191 +1,153 @@
 import { cn } from "@/lib/utils";
 import React from "react";
 import styles from "./privacy.module.css";
+import { permissions } from "@/constant/faqs";
 const Privacy = () => {
   return (
     <div className='min-h-screen  xl:max-w-[1024px] mx-auto pt-[50px] max-xl:px-6  max-w-[768px] pb-2 '>
       <article className={styles.prose}>
         <h1 className='text-[64px] font-bold mb-8 max-sm:text-[40px]'>
-          Privacy Policy
+          Privacy Policy for CRXEmulator
         </h1>
-        <span className='text-xl font-medium'>Last updated: Jan 10, 2025</span>
+        <span className='text-xl font-medium'>
+          Effective Date: Jan 15, 2025
+        </span>
+        <span className='text-xl font-medium'>Last Updated: Jan 15, 2025</span>
+        <h2 className={cn("mt-[28px]", styles.heading)}>Introduction</h2>
         <p className='pt-6'>
-          At Auto Refresh Plus, we respect your privacy and are committed to
-          protecting your personal information. This Privacy Policy outlines how
-          we collect, use, disclose, and safeguard your information when you use
-          our browser extension. Please read this Privacy Policy carefully. By
-          using Auto Refresh Plus, you agree to the terms of this Privacy
+          At CRXEmulator, we value your privacy and are committed to protecting
+          your personal information. This Privacy Policy outlines the data we
+          collect, how it is used, and your rights concerning your information.
+          By using CRXEmulator, you agree to the terms of this Privacy Policy.
           Policy.
         </p>
         <h2 className={cn("mt-[28px]", styles.heading)}>
-          1. Information We Collect
+          Information We Collect
         </h2>
-        <h3 className={styles.subheading}>a. Information You Provide</h3>
+        <p>
+          CRXEmulator is designed to operate with minimal data collection.
+          However, to ensure functionality and improve our services, we may
+          collect the following types of information:
+        </p>
+        <h3 className={styles.subheading}>1. Non-Personal Information</h3>
         <ul className='list-disc pl-[44px] mb-2'>
+          <li className='mt-4'>Browser version and type</li>Operating system
+          <li className='mt-4'>Operating system</li>
           <li className='mt-4'>
-            <strong>Contact Information:</strong> If you contact us for support
-            or provide feedback, we may collect your name, email address, and
-            any other information you choose to provide.
+            General usage statistics (e.g., the number of extensions installed
+            using CRXEmulator)
           </li>
         </ul>
-        <h3 className={styles.subheading}>
-          b. Automatically Collected Information
-        </h3>
+        <h3 className={styles.subheading}>2. Permissions Access</h3>
+        <p>
+          CRXEmulator requests permissions only as required by the extensions
+          being installed. These permissions are strictly limited to those
+          listed in our documentation, such as access to:
+        </p>
         <ul className='list-disc pl-[44px] mb-2'>
-          <li className='mt-4'>
-            <strong>Usage Data:</strong> We collect information about your
-            interactions with the extension, such as the frequency and duration
-            of use, using Google Analytics.
+          <li className='  mt-4 '>
+            <code className='bg-[#f4f4f4] px-2 rounded-md'>http:///</code> and{" "}
+            <code className='bg-[#f4f4f4] px-2 rounded-md'>https:///</code>
           </li>
-          <li className='mt-4'>
-            <strong>Technical Data:</strong> Google Analytics may collect
-            information about your device, browser type, operating system, and
-            IP address. This data is anonymized and aggregated to help us
-            understand how the extension is used.
+          {permissions.map((item, i) => (
+            <li key={i} className='    mt-3 '>
+              <code className='bg-[#f4f4f4] px-2 rounded-md'>{item}</code>
+            </li>
+          ))}
+          <li className='mt-3 '>
+            <code className='bg-[#f4f4f4] px-2 rounded-md'>downloads</code>
           </li>
         </ul>
-        <h3 className={styles.subheading}>
-          b. Automatically Collected Information
-        </h3>
+        <p>We do not store or share any data accessed by these permissions.</p>
+        <h1 className={styles.heading}>How We Use Your Information</h1>
+        <p>
+          The information collected by CRXEmulator is used solely for the
+          following purposes:
+        </p>
         <ul className='list-disc pl-[44px] mb-2'>
           <li className='mt-4'>
-            When submitting a contact form on Auto Refresh Plus website, you
-            agree to share with us your name, email, your concern message,
-            country, operating system, browser name and version.
+            To enable and optimize the installation of extensions.
           </li>
           <li className='mt-4'>
-            If the Auto Refresh Plus extension is installed, we also collect the
-            extension version, install date, and extension configuration for
-            easier debugging and error resolution.
+            To diagnose issues and improve the performance of the extension.
           </li>
           <li className='mt-4'>
-            Please note that all data is anonymized, and we do not know your
-            identity.
+            To ensure compatibility and security for installed extensions.
           </li>
         </ul>
         <h2 className={cn("!mt-[28px]", styles.heading)}>
-          2. How We Use Your Information
+          How We Protect Your Information
         </h2>
         <p className='!mb-4'>
-          We use the information we collect for the following purposes:
+          We implement industry-standard security measures to protect your
+          information from unauthorized access, disclosure, or misuse.
+          CRXEmulator does not store sensitive user data, minimizing risks
+          associated with data breaches.
+        </p>
+        <h2 className={cn("!mt-[28px]", styles.heading)}>
+          Third-Party Extensions
+        </h2>
+        <p className='!mb-4'>
+          CRXEmulator facilitates the installation of third-party .crx files. We
+          are not responsible for the data collection, usage, or privacy
+          practices of these third-party extensions. We encourage users to
+          review the privacy policies of extensions they install.
+        </p>
+        <h2 className={cn("!mt-[28px]", styles.heading)}>
+          Data Sharing and Disclosure
+        </h2>
+        <p className='!mb-4'>
+          CRXEmulator does not sell, rent, or share your personal data with
+          third parties. We may disclose non-personal usage statistics in
+          aggregate form to improve our services.
+        </p>
+        <h2 className={cn("!mt-[28px]", styles.heading)}>Cookies</h2>
+        <p className='!mb-4'>
+          CRXEmulator does not use cookies or any similar tracking technologies.
+        </p>
+        <h2 className={cn("!mt-[28px]", styles.heading)}>Your Rights</h2>
+        <p className='!mb-4'>
+          As a user of CRXEmulator, you have the following rights: Policy.
         </p>
         <ul className='list-disc pl-[44px] mb-2'>
           <li className='mt-4'>
-            <strong>To Provide and Maintain the Extension:</strong> Ensuring the
-            extension functions correctly and efficiently.
+            <strong>Access:</strong>You may request access to any non-personal
+            data collected during your use of CRXEmulator.
           </li>
           <li className='mt-4'>
-            <strong>To Improve Our Services:</strong> Analyzing usage data to
-            enhance user experience and add new features.
+            <strong>Deletion:</strong> You can uninstall CRXEmulator at any time
+            to stop any further data collection.
           </li>
           <li className='mt-4'>
-            <strong>To Communicate with You:</strong> Responding to your
-            inquiries, providing support, and sending updates or information
-            about the extension.
+            <strong> Consent Withdrawal:</strong> By uninstalling the extension,
+            you withdraw your consent for CRXEmulator to access permissions
+            granted.
           </li>
           <li className='mt-4'>
-            <strong>To Ensure Security:</strong> Monitoring for fraudulent or
-            malicious activity and ensuring the security of our services.
+            <strong>Children&apos;s Privacy</strong> CRXEmulator is not intended
+            for use by individuals under the age of 13. We do not knowingly
+            collect personal data from children.
           </li>
         </ul>
         <h2 className={cn("!mt-[28px]", styles.heading)}>
-          3. How We Share Your Information
+          Changes to This Privacy Policy
         </h2>
         <p className='!mb-4'>
-          We do not sell, trade, or otherwise transfer your personal information
-          to outside parties except as described below:
-        </p>
-        <ul className='list-disc pl-[44px] mb-2'>
-          <li className='mt-4'>
-            <strong>Service Providers:</strong> We may share your information
-            with third-party service providers who assist us in operating the
-            extension, conducting our business, or serving our users, so long as
-            those parties agree to keep this information confidential.
-          </li>
-          <li className='mt-4'>
-            <strong>Legal Requirements:</strong> We may disclose your
-            information if required to do so by law or in response to valid
-            requests by public authorities.
-          </li>
-        </ul>
-        <h2 className={cn("!mt-[28px]", styles.heading)}>4. Data Security</h2>
-        <p className='!mb-4'>
-          We implement a variety of security measures to maintain the safety of
-          your personal information when you use the extension. However, please
-          be aware that no security measures are perfect or impenetrable, and we
-          cannot guarantee the absolute security of your information.
-        </p>
-        <h2 className={cn("!mt-[28px]", styles.heading)}>5. Your Rights</h2>
-        <p className='!mb-4'>
-          Depending on your location, you may have the following rights
-          regarding your personal information:
-        </p>
-        <ul className='list-disc pl-[44px] mb-2'>
-          <li className='mt-4'>
-            <strong>Access:</strong> You have the right to request access to the
-            personal information we hold about you.
-          </li>
-          <li className='mt-4'>
-            <strong> Correction:</strong> You have the right to request
-            correction of any inaccurate or incomplete personal information.
-          </li>
-          <li className='mt-4'>
-            <strong>Deletion:</strong> You have the right to request deletion of
-            your personal information, subject to certain legal obligations.
-            Objection: You have the right to object to the processing of your
-            personal information.
-          </li>
-          <li className='mt-4'>
-            <strong>Objection:</strong> You have the right to object to the
-            processing of your personal information.
-          </li>
-        </ul>
-        <h2 className={cn("!mt-[28px]", styles.heading)}>
-          6. Use of Google Analytics
-        </h2>
-        <p className='!mb-4'>
-          Auto Refresh Plus uses Google Analytics to collect information about
-          your use of the extension. Google Analytics collects information such
-          as how often users visit the extension, what pages they visit, and
-          what other sites they used prior to coming to the extension. We use
-          the information we get from Google Analytics to improve our extension
-          and services. <br /> <br /> Google Analytics collects only the IP
-          address assigned to you on the date you use the extension, rather than
-          your name or other identifying information. We do not combine the
-          information collected through the use of Google Analytics with
-          personally identifiable information. Although Google Analytics plants
-          a persistent cookie on your web browser to identify you as a unique
-          user the next time you use the extension, the cookie cannot be used by
-          anyone but Google. Google’s ability to use and share information
-          collected by Google Analytics about your visits to the extension is
-          restricted by the Google Analytics Terms of Use and the Google Privacy
-          Policy.
-        </p>
-
-        <h2 className={cn("!mt-[28px]", styles.heading)}>
-          7. Changes to This Privacy Policy
-        </h2>
-        <p className='!mb-4'>
-          We may update this Privacy Policy from time to time to reflect changes
-          to our practices or for other operational, legal, or regulatory
-          reasons. We will notify you of any significant changes by posting the
-          new Privacy Policy on our website or through the extension. Your
-          continued use of the extension after such changes will constitute your
-          acknowledgment of the modified Privacy Policy and your agreement to
-          abide by it.
+          We may update this Privacy Policy from time to time. Any changes will
+          be posted on this page, and the &quot;Last Updated&quot; date will be
+          revised accordingly. We encourage you to review this Privacy Policy
+          periodically.
         </p>
         <h2 className={cn("!mt-[28px]", styles.heading)}>8. Contact Us</h2>
         <p className='!mb-5'>
-          If you have any questions about this Privacy Policy, please contact us
-          at:
+          If you have any questions or concerns about this Privacy Policy or
+          CRXEmulator’s data practices, please contact us at:
         </p>
         <p className='!mb-5'>Email: support@autorefresh.io</p>
+        <p className='!mb-5'>Address: </p>
         <p className='!mb-5'>
-          By using Auto Refresh Plus, you signify your acceptance of this
-          Privacy Policy. If you do not agree to this policy, please do not use
-          our extension. Your continued use of the extension following the
-          posting of changes to this policy will be deemed your acceptance of
-          those changes.
+          By using CRXEmulator, you acknowledge that you have read and
+          understood this Privacy Policy.
         </p>
       </article>
     </div>
