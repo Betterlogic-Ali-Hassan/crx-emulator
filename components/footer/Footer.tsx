@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className=' border-t pb-6 pt-8 mt-[100px]'>
       <div className='my-container'>
         <div className='flex flex-col items-center justify-center gap-6 min-[960px]:flex-row'>
-          <Menu footer />
+          <Menu />
         </div>
         <div className='flex items-center justify-center'>
           <p className='my-[40px] w-[75%] text-center text-base font-medium'>
