@@ -6,8 +6,7 @@ const Footer = () => {
   return (
     <footer className=' border-t pb-6 pt-8 mt-[100px]'>
       <div className='my-container'>
-        <div className='flex flex-col items-center justify-between gap-6 min-[960px]:flex-row'>
-          <Logo />
+        <div className='flex flex-col items-center justify-center gap-6 min-[960px]:flex-row'>
           <Menu footer />
         </div>
         <div className='flex items-center justify-center'>
