@@ -7,7 +7,7 @@ import MobileHeader from "./MobileHeader";
 
 const Header = () => {
   return (
-    <header className='py-5 px-8 border-b'>
+    <header className='py-5 px-6 sm:px-8 border-b'>
       <div className='my-container'>
         <nav className='flex items-center justify-between'>
           <Logo />
