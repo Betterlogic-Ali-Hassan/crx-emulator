@@ -5,28 +5,7 @@
   padding: 60px 30px 30px 30px;
   border-radius: 16px;
 }
-.card:hover {
-  color: white;
-  .card-icon span {
-    left: 25px;
-  }
-}
-.card::before {
-  bottom: 0;
-  left: 0;
-  position: absolute;
-  z-index: -1;
-  background: black;
-  content: "";
-  border-radius: 16px;
-  height: 0;
-  width: 0;
-  transition: all 0.5s ease;
-}
-.card:hover::before {
-  height: 100%;
-  width: 100%;
-}
+
 .card-icon span {
   width: 64px;
   height: 64px;

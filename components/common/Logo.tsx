@@ -1,8 +1,9 @@
+import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Logo = () => {
+const Logo = ({ header }: { header?: boolean }) => {
   return (
     <Link href='/' className='flex items-center'>
       <Image
@@ -12,7 +13,12 @@ const Logo = () => {
         width={42}
         className='mr-3'
       />
-      <span className='uppercase text-[26px] tracking-tighter font-bold'>
+      <span
+        className={cn(
+          "uppercase text-[26px] tracking-tighter font-bold",
+          header && "sm:inline-block hidden"
+        )}
+      >
         foxified
       </span>
     </Link>
