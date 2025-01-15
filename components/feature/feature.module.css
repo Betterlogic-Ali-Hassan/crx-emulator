@@ -1,0 +1,19 @@
+.badge {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1;
+  background: black;
+  color: white;
+  border-radius: 50px;
+  display: inline-block;
+  padding: 10px 25px;
+  margin-bottom: 1.4rem;
+}
+.heading {
+  color: black;
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 55px;
+  letter-spacing: -2px;
+  display: block;
+}

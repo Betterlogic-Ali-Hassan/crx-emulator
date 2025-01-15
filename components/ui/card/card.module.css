@@ -1,0 +1,63 @@
+.card {
+  background: var(--card);
+  position: relative;
+  z-index: 1;
+  padding: 60px 30px 30px 30px;
+  border-radius: 16px;
+}
+.card:hover {
+  color: white;
+  .card-icon span {
+    left: 25px;
+  }
+}
+.card::before {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background: black;
+  content: "";
+  border-radius: 16px;
+  height: 0;
+  width: 0;
+  transition: all 0.5s ease;
+}
+.card:hover::before {
+  height: 100%;
+  width: 100%;
+}
+.card-icon span {
+  width: 64px;
+  height: 64px;
+  line-height: 64px;
+  background: #cbfa45;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: -30px;
+  left: 50px;
+  transition: all 0.5s ease;
+}
+.desc {
+  text-align: left;
+}
+.desc h5 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  margin: 0 0 1rem 0;
+}
+.desc p,
+.desc a {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 1rem 0;
+}
+.desc a span {
+  display: inline-block;
+  transition: all 0.5s ease;
+}
