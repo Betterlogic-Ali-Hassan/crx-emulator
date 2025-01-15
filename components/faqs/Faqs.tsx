@@ -12,7 +12,9 @@ export default function FAQs() {
   return (
     <section className='pt-[52px]'>
       <div className='my-container'>
-        <h2 className='text-5xl font-bold mb-2'>Frequently Asked Questions</h2>
+        <h2 className='sm:text-5xl text-3xl font-bold mb-2'>
+          Frequently Asked Questions
+        </h2>
         <Accordion type='single' collapsible defaultValue='item-1'>
           {Faqs.map((faq, index) => (
             <AccordionItem

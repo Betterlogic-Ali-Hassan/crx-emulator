@@ -1,9 +1,15 @@
+import { cn } from "@/lib/utils";
 import Link from "next/link";
 import React from "react";
 
-const Menu = () => {
+const Menu = ({ footer }: { footer?: boolean }) => {
   return (
-    <ul className='flex items-center ml-6 gap-2 mt-1'>
+    <ul
+      className={cn(
+        " items-center ml-6 gap-2 mt-1 lg:flex hidden justify-center flex-wrap",
+        footer && "lg:flex flex"
+      )}
+    >
       {["home", "contact", "privacy policy", "terms of service"].map(
         (item, i) => (
           <li
