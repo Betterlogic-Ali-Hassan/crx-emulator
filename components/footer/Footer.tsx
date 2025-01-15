@@ -11,10 +11,8 @@ const Footer = () => {
         </div>
         <div className='flex items-center justify-center'>
           <p className='my-[40px] w-[75%] text-center text-base font-medium'>
-            <strong>Use it with caution:</strong> This tool can be helpful, but
-            it is not a substitute for your own knowledge and understanding.
-            Make sure to use it as a supplement to your own research and
-            writing, rather than relying on it exclusively.
+            Copyright © 2025 CRXEmulator. All Rights Reserved. Your trusted
+            solution for secure and seamless Chrome extension installations
           </p>
         </div>
         <div className='flex items-center justify-center'>
