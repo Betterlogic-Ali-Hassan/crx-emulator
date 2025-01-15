@@ -20,7 +20,7 @@ const Header = () => {
             </Link>
 
             <div className='h-[3rem] '>
-              <Button className='min-h-[52px] max-h-[3rem] !text-lg'>
+              <Button className='min-h-[52px] max-h-[3rem] max-[402px]:!text-sm max-[402px]:!px-[10px] '>
                 <Image src='/chrome.png' height={28} width={28} alt='icon' />
                 Add to Chrome
               </Button>
