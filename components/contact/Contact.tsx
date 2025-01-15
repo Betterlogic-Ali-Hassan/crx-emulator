@@ -5,7 +5,6 @@ import { Alert, AlertDescription } from "../ui/alert";
 import { useForm, ValidationError } from "@formspree/react";
 import { Loader2 } from "lucide-react";
 import { Textarea } from "../ui/textarea";
-import Tabs from "./Tabs";
 import styles from "./contact.module.css";
 const Contact = () => {
   const [state, handleSubmit] = useForm("xqaawegb");
@@ -67,10 +66,20 @@ const Contact = () => {
         </div>
 
         <div className='mb-6'>
-          <h3 className='text-xl font-medium mb-4'>
-            What kind of your Report?
-          </h3>
-          <Tabs />
+          <input
+            id='subject'
+            type='text'
+            name='subject'
+            placeholder='Subject'
+            className={styles.input}
+            required
+          />
+          <ValidationError
+            prefix='subject'
+            field='subject'
+            errors={state.errors}
+            className='text-red-500'
+          />
         </div>
 
         <div className='mb-6'>

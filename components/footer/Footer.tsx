@@ -9,10 +9,6 @@ const Footer = () => {
         <div className='flex flex-col items-center justify-between gap-6 min-[960px]:flex-row'>
           <Logo />
           <Menu footer />
-
-          <div className='flex max-w-[220px] items-center rounded-full border border-[#E2E8F0] px-4 py-[10px]'>
-            <Logo />
-          </div>
         </div>
         <div className='flex items-center justify-center'>
           <p className='my-[40px] w-[75%] text-center text-base font-medium'>
