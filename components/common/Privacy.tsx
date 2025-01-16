@@ -14,8 +14,8 @@ const Privacy = () => {
         </span>
 
         <span className='text-xl font-medium'>Last Updated: Jan 1, 2025</span>
-        <h2 className={cn("mt-[28px]", styles.heading)}>Introduction</h2>
-        <p className='pt-6'>
+        <h2 className={cn("!mt-[28px]", styles.heading)}>Introduction</h2>
+        <p>
           At CRXEmulator, we value your privacy and are committed to protecting
           your personal information. This Privacy Policy outlines the data we
           collect, how it is used, and your rights concerning your information.
