@@ -9,14 +9,14 @@ const Terms = () => {
         <h1 className='text-[64px] font-bold mb-8 max-sm:text-[40px]'>
           Terms of Service for CRXEmulator
         </h1>
-        <span className='text-xl font-medium'>
-          Effective Date: Jan 15, 2025
+        <span className='text-xl font-medium block mb-2'>
+          Effective Date: Jan 1, 2025
         </span>
-        <span className='text-xl font-medium'>Last Updated: Jan 15, 2025</span>
-        <h2 className={cn("mt-[28px]", styles.heading)}>
+        <span className='text-xl font-medium'>Last Updated: Jan 1, 2025</span>
+        <h2 className={cn("!mt-[28px]", styles.heading)}>
           1. Acceptance of Terms
         </h2>
-        <p className='pt-6'>
+        <p>
           By installing or using CRXEmulator, you agree to comply with and be
           bound by these Terms of Service. If you do not agree to these terms,
           you must not use CRXEmulator.
@@ -129,9 +129,9 @@ const Terms = () => {
         <h2 className={cn("!mt-[28px]", styles.heading)}>10. Governing Law</h2>
         <p className='!mb-4'>
           These Terms of Service shall be governed by and construed in
-          accordance with the laws of Pakistan. Any disputes arising out of or
-          related to these terms shall be resolved exclusively in the courts of
-          Rawalpindi.
+          accordance with the laws of the United Kingdom. Any disputes arising
+          out of or related to these terms shall be resolved exclusively in the
+          courts of London, United Kingdom.
         </p>
 
         <h2 className={cn("!mt-[28px]", styles.heading)}>
@@ -141,8 +141,7 @@ const Terms = () => {
           For any questions or concerns about these Terms of Service, please
           contact us at:
         </p>
-        <p className='!mb-5'>Email: support@autorefresh.io</p>
-        <p className='!mb-5'>Address: </p>
+        <p className='!mb-5'>Email: support@crxemulator.com </p>
         <p className='!mb-5'>
           By using CRXEmulator, you acknowledge that you have read, understood,
           and agree to these Terms of Service.

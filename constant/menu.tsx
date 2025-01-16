@@ -1,15 +1,11 @@
 export const menu = [
   {
-    label: "Home",
-    href: "/",
-  },
-  {
     label: "Contact",
     href: "/contact",
   },
   {
     label: "privacy policy",
-    href: "/privacy",
+    href: "/privacy-policy",
   },
   {
     label: "Terms of Service",

@@ -8,7 +8,7 @@ const Feature = () => {
       <div className='my-container'>
         <div className='mb-16 flex items-center justify-center flex-col'>
           <span className={styles.badge}>Services</span>
-          <h2 className={styles.heading}>Foxified features</h2>
+          <h2 className={styles.heading}>CRXemulator features</h2>
         </div>
         <Cards />
       </div>

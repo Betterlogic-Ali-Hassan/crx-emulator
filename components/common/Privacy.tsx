@@ -9,10 +9,11 @@ const Privacy = () => {
         <h1 className='text-[64px] font-bold mb-8 max-sm:text-[40px]'>
           Privacy Policy for CRXEmulator
         </h1>
-        <span className='text-xl font-medium'>
-          Effective Date: Jan 15, 2025
+        <span className='text-xl font-medium block mb-2'>
+          Effective Date: Jan 1, 2025
         </span>
-        <span className='text-xl font-medium'>Last Updated: Jan 15, 2025</span>
+
+        <span className='text-xl font-medium'>Last Updated: Jan 1, 2025</span>
         <h2 className={cn("mt-[28px]", styles.heading)}>Introduction</h2>
         <p className='pt-6'>
           At CRXEmulator, we value your privacy and are committed to protecting
@@ -143,8 +144,7 @@ const Privacy = () => {
           If you have any questions or concerns about this Privacy Policy or
           CRXEmulator’s data practices, please contact us at:
         </p>
-        <p className='!mb-5'>Email: support@autorefresh.io</p>
-        <p className='!mb-5'>Address: </p>
+        <p className='!mb-5'>Email: support@crxemulator.com </p>
         <p className='!mb-5'>
           By using CRXEmulator, you acknowledge that you have read and
           understood this Privacy Policy.
