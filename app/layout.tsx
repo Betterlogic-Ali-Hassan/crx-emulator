@@ -30,9 +30,9 @@ const font = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Foxified Emulator",
+  title: "CRXEmulator Emulator",
   description:
-    "Emulate Firefox addons in Chrome, Edge, Opera and other Chromium based browsers",
+    "CRXEmulator simplifies the process of installing Chrome extensions (.crx files) with just one click.",
 };
 
 export default function RootLayout({
