@@ -51,7 +51,7 @@ const Privacy = () => {
             <code className='bg-[#f4f4f4] px-2 rounded-md'>https:///</code>
           </li>
           {permissions.map((item, i) => (
-            <li key={i} className='    mt-3 '>
+            <li key={i} className='mt-3 '>
               <code className='bg-[#f4f4f4] px-2 rounded-md'>{item}</code>
             </li>
           ))}
